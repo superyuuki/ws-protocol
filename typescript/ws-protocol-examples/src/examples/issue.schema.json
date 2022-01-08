@@ -1,0 +1,134 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "shortId": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "culprit": {
+            "type": "string"
+          },
+          "permalink": {
+            "type": "string"
+          },
+          "level": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "isPublic": {
+            "type": "boolean"
+          },
+          "platform": {
+            "type": "string"
+          },
+          "project": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "slug": {
+                "type": "string"
+              },
+              "platform": {
+                "type": "string"
+              }
+            },
+            "required": ["id", "name", "slug", "platform"]
+          },
+          "type": {
+            "type": "string"
+          },
+          "metadata": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "filename": {
+                "type": "string"
+              },
+              "function": {
+                "type": "string"
+              },
+              "display_title_with_tree_label": {
+                "type": "boolean"
+              }
+            },
+            "required": ["value", "type", "filename", "function", "display_title_with_tree_label"]
+          },
+          "numComments": {
+            "type": "integer"
+          },
+          "isBookmarked": {
+            "type": "boolean"
+          },
+          "isSubscribed": {
+            "type": "boolean"
+          },
+          "hasSeen": {
+            "type": "boolean"
+          },
+          "isUnhandled": {
+            "type": "boolean"
+          },
+          "count": {
+            "type": "string"
+          },
+          "userCount": {
+            "type": "integer"
+          },
+          "firstSeen": {
+            "type": "string"
+          },
+          "lastSeen": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "shortId",
+          "title",
+          "culprit",
+          "permalink",
+          "level",
+          "status",
+          "isPublic",
+          "platform",
+          "project",
+          "type",
+          "metadata",
+          "numComments",
+          "isBookmarked",
+          "isSubscribed",
+          "hasSeen",
+          "isUnhandled",
+          "count",
+          "userCount",
+          "firstSeen",
+          "lastSeen"
+        ]
+      }
+    }
+  },
+  "required": ["issues"]
+}
