@@ -141,6 +141,7 @@ export type StatusMessage = {
   op: "status";
   level: StatusLevel;
   message: string;
+  tip: string;
 };
 export type Advertise = {
   op: "advertise";
